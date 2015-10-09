@@ -82,66 +82,139 @@
         <div class="card">
           <div class="content">
               <div class="box">
-                <button class="mui-btn" data-mui-style="fab" data-mui-color="accent">
-                  <span class="fi-folder xlarge"></span>
-                  <button class="addBtn mui-hide mui-btn addFileBtn" data-mui-style="fab"><i class="fi-eye"></i></button>
-                  <button class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab"><i class="fi-plus"></i></button>
-               </button>
-                <div class="info">
-                  <h4 class="text-center">General Documents</h4>
-                    <div class="small-4 columns">
-                      <div class="image-wrapper overlay-fade-in">
-                        <div class="thumbnail">
-                          <h3>Document Name</h3>
-                          <h4 class="createdDate">Created 10.23.14</h4>
-                        </div>
-                        <div class="image-overlay-content">
-                            <ul class="stack button-group">
-                              <li><a href="#" class="button secondary"  onclick="activateModal()"><i class="fi-eye"></i></a></li>
-                              <li><a href="#" data-reveal-id="historyModal" class="button secondary"><i class="fi-comments"></i></a></li>
-                              <li><a href="#" class="button secondary"><i class="fi-pencil"></i></a></li>
-                              <li><a href="#" class="button secondary"><i class="fi-trash"></i></a></li>
-                            </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="small-4 columns">
-                      <div class="image-wrapper overlay-fade-in">
-                        <div class="thumbnail">
-                           <h3>Document Name</h3>
-                           <h4 class="createdDate">Created 10.23.14</h4>
-                         </div>
-                         <div class="image-overlay-content">
-                             <ul class="stack button-group">
-                               <li><a href="#" class="button secondary"><i class="fi-eye"></i></a></li>
-                               <li><a href="#" class="button secondary"><i class="fi-comments"></i></a></li>
-                               <li><a href="#" class="button secondary"><i class="fi-pencil"></i></a></li>
-                               <li><a href="#" class="button secondary"><i class="fi-trash"></i></a></li>
-                             </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="small-4 columns">
-                      <div class="image-wrapper overlay-fade-in">
-                        <div class="thumbnail">
-                           <h3>Document Name</h3>
-                           <h4 class="createdDate">Created 10.23.14</h4>
-                         </div>
-                         <div class="image-overlay-content">
-                             <ul class="stack button-group">
-                               <li><a href="#" class="button secondary"><i class="fi-eye"></i></a></li>
-                               <li><a href="#" class="button secondary"><i class="fi-comments"></i></a></li>
-                               <li><a href="#" class="button secondary"><i class="fi-pencil"></i></a></li>
-                               <li><a href="#" class="button secondary"><i class="fi-trash"></i></a></li>
-                             </ul>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="folderButtons">
+                    <button id="folderBtn" class="mui-btn" data-mui-style="fab" data-mui-color="accent">
+                      <span class="fi-folder xlarge"></span>
+                    </button>
+                    <button data-reveal-id="addModal" class="addBtn mui-hide mui-btn addFileBtn" data-mui-style="fab">
+                          <i class="fi-plus"></i>
+                    </button>
+                    <button data-reveal-id="quickViewModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+                          <i class="fi-eye"></i>
+                    </button>
+                </div>
+        <div class="info">
+          <h4 class="text-right">General Documents</h4>
+            <div class="small-3 columns">
+              <div class="image-wrapper overlay-fade-in">
+                <div class="thumbnail">
+                  <h3>Document Name</h3>
+                  <h4 class="createdDate">Created 10.23.14</h4>
+                </div>
+                <div class="image-overlay-content">
+                    <ul class="stack button-group">
+                      <li>
+                          <a href="#" class="button secondary"><i class="fi-eye"></i></a>
+                      </li>
+                      <li>
+                          <a href="#" data-reveal-id="historyModal" class="button secondary"><i class="fi-comments"></i></a>
+                      </li>
+                      <li>
+                          <a href="#" class="button secondary"><i class="fi-pencil"></i></a>
+                      </li>
+                      <li>
+                          <a href="#" class="button secondary"><i class="fi-trash"></i></a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="small-3 columns">
+              <div class="image-wrapper overlay-fade-in">
+                <div class="thumbnail">
+                   <h3>Document Name</h3>
+                   <h4 class="createdDate">Created 10.23.14</h4>
+                 </div>
+                 <div class="image-overlay-content">
+                     <ul class="stack button-group">
+                       <li>
+                           <a href="#" class="button secondary">
+                           <i class="fi-eye"></i>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#" class="button secondary">
+                           <i class="fi-comments"></i>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#" class="button secondary">
+                           <i class="fi-pencil"></i>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#" class="button secondary">
+                           <i class="fi-trash"></i>
+                           </a>
+                       </li>
+                     </ul>
+                </div>
+              </div>
+            </div>
+            <div class="small-3 columns">
+              <div class="image-wrapper overlay-fade-in">
+                <div class="thumbnail">
+                   <h3>Document Name</h3>
+                   <h4 class="createdDate">Created 10.23.14</h4>
+                 </div>
+                 <div class="image-overlay-content">
+                     <ul class="stack button-group">
+                       <li>
+                           <a href="#" class="button secondary">
+                           <i class="fi-eye"></i>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#" class="button secondary">
+                           <i class="fi-comments"></i>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#" class="button secondary">
+                           <i class="fi-pencil"></i>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#" class="button secondary">
+                           <i class="fi-trash"></i>
+                           </a>
+                       </li>
+                     </ul>
+                </div>
+              </div>
+            </div>
+            <div class="small-3 columns">
+              <div class="image-wrapper overlay-fade-in">
+                <div class="thumbnail">
+                   <i class="fi-plus"></i>
+                 </div>
+                 <div class="image-overlay-content">
+                     <ul class="stack button-group">
+                       <span>Upload new file or folder</span>
+                     </ul>
+                </div>
+              </div>
+            </div>
+
                 </div>
               </div>
           </div>
     </div>
   </div>
+</div>
+
+<div id="addModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Add File</h2>
+  <p class="lead"><i class="fi-plus"></i></p>
+  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div id="quickViewModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Quick View Folder</h2>
+  <p class="lead">I am a quick view of this folder.</p>
+
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 
 
