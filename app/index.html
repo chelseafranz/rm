@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/bower_components/foundation/css/foundation.min.css">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
      <link href="//cdn.muicss.com/mui-0.1.23/css/mui.min.css" rel="stylesheet" type="text/css" />
+
+     <link rel="stylesheet" href="plugins/secondary-sliding-navigation/css/style.css">
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -32,35 +34,35 @@
 
 
     <!-- Navigation -->
-    <div class="contain-to-grid sticky">
+    <header>
 
-      <nav class="top-bar" data-topbar>
-        <ul class="title-area">
-          <li class="name">
-            <h1><a class="logo show-for-small-only" href="#"><img src="http://placehold.it/50x50" /></a></h1>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
 
-        <section class="top-bar-section">
+  		<nav class="cd-main-nav-wrapper">
+  			<ul class="cd-main-nav">
+  				<li><a href="#0">Home</a></li>
+  				<li><a href="#0">Timeline</a></li>
+  				<li><a href="#0">Add File</a></li>
+  				<li><a href="#0">Search</a></li>
+  				<li>
+  					<a href="#0" class="cd-subnav-trigger">Folders</a>
 
-          <div class="logo-wrapper hide-for-small-only">
+  					<ul>
+  						<li class="go-back"><a href="#0">Menu</a></li>
+  						<li><a href="#0">General Documents</a></li>
+  						<li><a href="#0">Payroll</a></li>
+  						<li><a href="#0">Employees</a></li>
+  						<li><a href="#0">Miscelaneous</a></li>
+  						<li><a href="#0">Personal</a></li>
+  						<li><a href="#0" class="placeholder">Placeholder</a></li>
+  					</ul>
+  				</li>
+  			</ul> <!-- .cd-main-nav -->
+  		</nav> <!-- .cd-main-nav-wrapper -->
 
-          </div>
+  		<a href="#0" class="cd-nav-trigger"><span></span></a>
+  	</header>
 
-          <!-- Right Nav Section -->
-          <ul class="text-center">
-            <li><a href="#"><i class="fi-home"></i></a></li>
-            <li><a href="#"><i class="fi-widget"></i></a></li>
-            <li><a href="#"><i class="fi-plus"></i></a></li>
-            <li><a href="timeline.html"><i class="fi-results"></i></a></li>
-            <li><a href="#"><i class="fi-magnifying-glass"></i></a></li>
-          </ul>
-
-          <!-- Left Nav Section -->
-        </section>
-      </nav>
-    </div><!-- /navigation -->
+  	<main class="cd-main-content">
 
 
 <div class="row">
@@ -202,7 +204,7 @@
 
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
-
+</main>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -226,6 +228,7 @@
     <!-- endbuild -->
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="//cdn.muicss.com/mui-0.1.23/js/mui.min.js"></script>
+    <script src="plugins/secondary-sliding-navigation/js/main.js"></script>
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
