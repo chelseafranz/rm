@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="plugins/bouncy-content-filter/css/style.css">
     <link rel="stylesheet" href="plugins/vertical-timeline/css/style.css">
     <link href="//cdn.muicss.com/mui-0.1.23/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="plugins/secondary-sliding-navigation/css/style.css">
+
 
     <!-- bower:css -->
     <!-- endbower -->
@@ -29,36 +31,44 @@
     <!-- endbuild -->
   </head>
   <body>
-    <div class="contain-to-grid sticky">
-
-      <nav class="top-bar" data-topbar>
-        <ul class="title-area">
-          <li class="name">
-            <h1><a class="logo show-for-small-only" href="#"><img src="http://placehold.it/50x50" /></a></h1>
+    <header>
+      <nav class="cd-main-nav-wrapper">
+        <ul class="cd-main-nav">
+          <li>
+            <a href="index.html">
+              <i class="fi-home"></i>
+            </a>
           </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
+          <li>
+            <a href="timeline.html">
+              <i class="fi-align-justify"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#0"><i class="fi-folder-add"></i></a>
+          </li>
+          <li>
+            <a href="#0"><i class="fi-magnifying-glass"></i></a>
+          </li>
+          <li>
+            <a href="#0" class="cd-subnav-trigger"><i class="fi-folder"></i></a>
 
-        <section class="top-bar-section">
+            <ul>
+              <li class="go-back"><a href="#0">Menu</a></li>
+              <li><a href="#0">General Documents</a></li>
+              <li><a href="#0">Payroll</a></li>
+              <li><a href="#0">Employees</a></li>
+              <li><a href="#0">Miscelaneous</a></li>
+              <li><a href="#0">Personal</a></li>
+              <li><a href="#0" class="placeholder">Placeholder</a></li>
+            </ul>
+          </li>
+        </ul> <!-- .cd-main-nav -->
+      </nav> <!-- .cd-main-nav-wrapper -->
+      <a href="#0" class="cd-nav-trigger"><span></span></a>
 
-          <div class="logo-wrapper hide-for-small-only">
-
-          </div>
-
-          <!-- Right Nav Section -->
-          <ul class="text-center">
-            <li><a href="index.html"><i class="fi-home"></i></a></li>
-            <li><a href="#"><i class="fi-widget"></i></a></li>
-            <li><a href="#"><i class="fi-plus"></i></a></li>
-            <li><a href="timeline.html"><i class="fi-results"></i></a></li>
-            <li><a href="#"><i class="fi-magnifying-glass"></i></a></li>
-          </ul>
-
-          <!-- Left Nav Section -->
-        </section>
-      </nav>
-    </div><!-- /navigation -->
-
+    </header>
+    <main class="cd-main-content">
 
   <div class="cd-gallery-container">
 		<nav class="cd-filter">
@@ -449,7 +459,7 @@
 			</li>
 				</ul>
 			</li>
-
+</main>
 			<!-- <li>
 				<ul class="cd-item-wrapper">
 					<li data-type="red" class="is-visible">
@@ -507,6 +517,7 @@
     <script src="plugins/vertical-timeline/js/main.js"></script>
     <script src="plugins/bouncy-content-filter/js/main.js"></script>
     <script src="//cdn.muicss.com/mui-0.1.23/js/mui.min.js"></script>
+    <script src="plugins/secondary-sliding-navigation/js/main.js"></script>
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
