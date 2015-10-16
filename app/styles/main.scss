@@ -90,8 +90,9 @@ button.addBtn{
 }
 
 .hide{
-  display: none;
+  visibility: hidden;
 }
+
 
 #fullPageCard{
   max-height: 100vh;

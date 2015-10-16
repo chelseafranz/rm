@@ -47,7 +47,7 @@
           <li>
             <a href=""><i class="fi-folder-add x-large" data-reveal-id="addModal"></i></a>
           </li>
-          
+
           <li>
             <a href="#0" class="cd-subnav-trigger"><i class="fi-magnifying-glass x-large"></i></a>
 
@@ -96,10 +96,32 @@
 				</li>
 
 				<li>
-					<a class="selected" data-type="red" href="#0">Document</a>
+					<a class="selected document" data-type="red" href="#0">Document</a>
 				</li>
+        <li>
+            <form>
+              <div class="mui-select">
+                <select>
+                  <option>
+                    <a class="document" data-type="red" href="#0">First Document</a>
 
-				<li>
+                  </option>
+                  <option>
+                    <a class="folder" data-type="red" href="#0">Another Document</a>
+                  </option>
+                  <option>
+                    <a class="folder" data-type="red" href="#0">More Documents</a>
+                  </option>
+
+
+                </select>
+
+
+              </div>
+            </form>
+        </li>
+
+				<li class="folder">
 					<a data-type="blue" href="#0">Folder</a>
 				</li>
 
@@ -110,11 +132,10 @@
 		<ul class="cd-gallery cd-container">
 			<li>
 				<ul class="cd-item-wrapper ">
-					<li data-type="red" class="is-visible">
+					<li data-type="red" class="is-visible" id="docView">
 						<!-- <img src="../bouncy-content-filter/img/thumb-red.jpg" alt="thumbnail"> -->
 
-          		<h1 class="text-center">Document History</h1>
-
+  <h1 class="text-center">Document History</h1>
       <section class="timelinePage">
       <section id="cd-timeline" class="cd-container">
           <div class="cd-timeline-block">
@@ -476,57 +497,372 @@
 
 			</li>
 
-			<li data-type="green" class="is-hidden">
 
-			</li>
-				</ul>
-			</li>
+<li data-type="blue" class="is-hidden hide" id="folderView">
+
+  <h1 class="text-center">Folder History</h1>
+  <section class="timelinePage">
+  <section id="cd-timeline" class="cd-container">
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img">
+      <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
+        <i class="fi-comment-quotes icons unread x-large"></i>
+      </button>
+
+      </div> <!-- cd-timeline-img -->
+
+  <div class="cd-timeline-content unread">
+    <h2><span class="commenterName">Angela</span> left a comment</h2>
+    <span  style="float: inherit;" class="cd-date min">Jan 14</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+
+        <form>
+            <div class="row replyButton">
+            <div class="small-12 columns">
+            <div class="row collapse prefix-round">
+            <div class="small-3 small-offset-4 large-4 large-offset-3 columns">
+                <a href="#" class="button prefix secondary"><i class="fi-comments"></i> Reply</a>
+            </div>
+                <div class="small-5 columns">
+                    <input type="text" placeholder="Your message here...">
+                </div>
+            </div>
+            </div>
+            </div>
+
+                <div class="button-bar small-7 small-offset-8 large-9 large-offset-3 columns">
+                <ul class="button-group round">
+                      <li><a href="#" class="button small has-tip secondary" title="Quick View Document"><i class="fi-eye"></i></a></li>
+                      <li><a href="#" class="button small has-tip secondary" title="Mark as read"><i class="fi-check"></i></a></li>
+                      <li><a href="#" class="button small has-tip secondary" title="Bookmark"><i class="fi-bookmark"></i></a></li>
+                      <li><a href="#" class="button small has-tip secondary" title="Archive"><i class="fi-trash"></i></a></li>
+                </ul>
+                </div>
+
+        </form>
+  </div> <!-- cd-timeline-content -->
+  </div> <!-- cd-timeline-block -->
+
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img">
+        <button data-reveal-id="" class="mui-btn" data-mui-style="fab"><i class="fi-comment-quotes icons x-large"></i></button>
+    </div> <!-- cd-timeline-img -->
+
+  <div class="cd-timeline-content">
+    <h2 class="min">
+        <strong>Dwight </strong> left a comment</h2>
+        <span class="cd-date min">Jan 18</span>
+
+        <form>
+        <div class="row replyButton">
+        <div class="small-12 columns">
+        <div class="row collapse prefix-round">
+            <div class="small-3 small-offset-4 large-4 large-offset-3 columns">
+                <a href="#" class="button prefix secondary">
+                    <i class="fi-comments"></i> Reply
+                </a>
+            </div>
+            <div class="small-5 columns">
+                <input type="text" placeholder="Your message here...">
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="button-bar small-7 small-offset-8 large-9 large-offset-3 columns">
+        <ul class="button-group round">
+              <li><a href="#" class="button small has-tip secondary" title="Quick View Document"><i class="fi-eye"></i></a></li>
+              <li><a href="#" class="button small has-tip secondary" title="Mark as read"><i class="fi-check"></i></a></li>
+              <li><a href="#" class="button small has-tip secondary" title="Bookmark"><i class="fi-bookmark"></i></a></li>
+              <li><a href="#" class="button small has-tip secondary" title="Archive"><i class="fi-trash"></i></a></li>
+        </ul>
+        </div>
+
+  </form>
+  </div> <!-- cd-timeline-content -->
+  </div> <!-- cd-timeline-block -->
+
+
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img">
+        <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
+            <i class="fi-alert icons x-large"></i>
+        </button>
+    </div> <!-- cd-timeline-img -->
+
+    <div class="cd-timeline-content">
+        <h2>30 Day Expiration Notice</h2>
+        <span class="cd-date">Jan 14</span>
+
+        <form>
+        <div class="row replyButton">
+        <div class="small-12 columns">
+        <div class="row collapse prefix-round">
+        <div class="small-3 small-offset-4 large-4 large-offset-3 columns">
+            <a href="#" class="button prefix secondary"><i class="fi-comments"></i> Reply</a>
+        </div>
+        <div class="small-5 columns">
+            <input type="text" placeholder="Your message here...">
+        </div>
+        </div>
+        </div>
+        </div>
+
+            <div class="button-bar small-7 small-offset-8 large-9 large-offset-3 columns">
+            <ul class="button-group round">
+                  <li><a href="#" class="button small has-tip secondary" title="Quick View Document"><i class="fi-eye"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Mark as read"><i class="fi-check"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Bookmark"><i class="fi-bookmark"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Archive"><i class="fi-trash"></i></a></li>
+            </ul>
+            </div>
+
+                            </form>
+                        </div> <!-- cd-timeline-content -->
+  </div> <!-- cd-timeline-block -->
+
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img">
+        <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
+          <i class="fi-unlock x-large unread"></i>
+        </button>
+    </div> <!-- cd-timeline-img -->
+
+    <div class="cd-timeline-content unread">
+        <h2>Request to View</h2>
+        <span class="cd-date">Jan 14</span>
+
+        <form>
+        <div class="row replyButton">
+        <div class="small-12 columns">
+        <div class="row collapse prefix-round">
+        <div class="small-3 small-offset-4 large-4 large-offset-3 columns">
+            <a href="#" class="button prefix secondary"><i class="fi-comments"></i> Reply</a>
+        </div>
+        <div class="small-5 columns">
+            <input type="text" placeholder="Your message here...">
+        </div>
+        </div>
+        </div>
+        </div>
+
+            <div class="button-bar small-7 small-offset-8 large-9 large-offset-3 columns">
+            <ul class="button-group round">
+                  <li><a href="#" class="button small has-tip secondary" title="Quick View Document"><i class="fi-eye"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Mark as read"><i class="fi-check"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Bookmark"><i class="fi-bookmark"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Archive"><i class="fi-trash"></i></a></li>
+            </ul>
+            </div>
+
+    </form>
+        </div> <!-- cd-timeline-content -->
+  </div> <!-- cd-timeline-block -->
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img">
+        <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
+            <i class="fi-key x-large"></i>
+        </button>
+    </div> <!-- cd-timeline-img -->
+
+    <div class="cd-timeline-content">
+        <h2>Request to Checkout</h2>
+        <span class="cd-date">Jan 14</span>
+
+        <form>
+        <div class="row replyButton">
+        <div class="small-12 columns">
+        <div class="row collapse prefix-round">
+        <div class="small-3 small-offset-4 large-4 large-offset-3 columns">
+            <a href="#" class="button prefix secondary"><i class="fi-comments"></i> Reply</a>
+        </div>
+        <div class="small-5 columns">
+            <input type="text" placeholder="Your message here...">
+        </div>
+        </div>
+        </div>
+        </div>
+
+            <div class="button-bar small-12 large-9  columns">
+            <ul class="button-group round">
+                  <li><a href="#" class="button small has-tip secondary" title="Quick View Document"><i class="fi-eye"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Mark as read"><i class="fi-check"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Bookmark"><i class="fi-bookmark"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Archive"><i class="fi-trash"></i></a></li>
+            </ul>
+            </div>
+
+    </form>
+        </div> <!-- cd-timeline-content -->
+  </div> <!-- cd-timeline-block -->
+
+
+
+
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img">
+        <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
+            <i class="fi-alert x-large"></i>
+        </button>
+    </div> <!-- cd-timeline-img -->
+
+    <div class="cd-timeline-content">
+        <h2>Expiring Document Alert</h2>
+    <span class="cd-date">Feb 12</span>
+        <p>This document expires in two days, please renew.</p>
+    <form>
+        <div class="row replyButton">
+        <div class="small-12 columns">
+        <div class="row collapse prefix-round">
+        <div class="small-3 small-offset-4 large-4 large-offset-3 columns">
+        <a href="#" class="button prefix secondary"><i class="fi-comments"></i> Reply</a>
+        </div>
+        <div class="small-5 columns">
+        <input type="text" placeholder="Your message here...">
+        </div>
+        </div>
+        </div>
+        </div>
+
+            <div class="button-bar small-7 small-offset-8 large-9 large-offset-3 columns">
+            <ul class="button-group round">
+                  <li><a href="#" class="button small has-tip secondary" title="Quick View Document"><i class="fi-eye"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Mark as read"><i class="fi-check"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Bookmark"><i class="fi-bookmark"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Archive"><i class="fi-trash"></i></a></li>
+            </ul>
+            </div>
+
+    </form>
+    </div> <!-- cd-timeline-content -->
+  </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img">
+            <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
+            <i class="fi-alert x-large"></i>
+            </button>
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+            <h2>30 Day Expiration Notice</h2>
+        <span class="cd-date">Jan 14</span>
+
+        <form>
+            <div class="row replyButton">
+            <div class="small-12 columns">
+            <div class="row collapse prefix-round">
+            <div class="small-3 small-offset-4 large-4 large-offset-3 columns">
+            <a href="#" class="button prefix secondary"><i class="fi-comments"></i> Reply</a>
+            </div>
+            <div class="small-5 columns">
+            <input type="text" placeholder="Your message here...">
+            </div>
+            </div>
+            </div>
+            </div>
+
+                <div class="button-bar small-7 small-offset-8 large-9 large-offset-3 columns">
+                <ul class="button-group round">
+                      <li><a href="#" class="button small has-tip secondary" title="Quick View Document"><i class="fi-eye"></i></a></li>
+                      <li><a href="#" class="button small has-tip secondary" title="Mark as read"><i class="fi-check"></i></a></li>
+                      <li><a href="#" class="button small has-tip secondary" title="Bookmark"><i class="fi-bookmark"></i></a></li>
+                      <li><a href="#" class="button small has-tip secondary" title="Archive"><i class="fi-trash"></i></a></li>
+                </ul>
+                </div>
+
+        </form>
+        </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img">
+        <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
+            <i class="fi-page-edit x-large unread"></i>
+        </button>
+    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content unread">
+                        <h2>Request to eSign</h2>
+                        <p><strong>Angela</strong> has requested an eSignature for this document</p>
+                        <span class="cd-date">Feb 18</span>
+    <form>
+        <div class="row replyButton">
+        <div class="small-12 columns">
+        <div class="row collapse prefix-round">
+        <div class="small-3 small-offset-4 large-4 large-offset-3 columns">
+        <a href="#" class="button prefix secondary"><i class="fi-comments"></i> Reply</a>
+        </div>
+        <div class="small-5 columns">
+        <input type="text" placeholder="Your message here...">
+        </div>
+        </div>
+        </div>
+        </div>
+
+            <div class="button-bar small-7 small-offset-8 large-9 large-offset-3 columns">
+            <ul class="button-group round">
+                  <li><a href="#" class="button small has-tip secondary" title="Quick View Document"><i class="fi-eye"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Mark as read"><i class="fi-check"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Bookmark"><i class="fi-bookmark"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Archive"><i class="fi-trash"></i></a></li>
+            </ul>
+            </div>
+
+    </form>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img">
+        <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
+            <i class="fi-key icons"></i>
+        </button>
+    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h2>Resquest to Check Out this Document</h2>
+                        <p>Andy would like to checkout this document for <strong>4 days. </strong></p>
+                        <span class="cd-date">Feb 26</span>
+    <form>
+        <div class="row replyButton">
+        <div class="small-12 columns">
+        <div class="row collapse prefix-round">
+        <div class="small-3 small-offset-4 large-4 large-offset-3 columns">
+        <a href="#" class="button prefix secondary"><i class="fi-comments"></i> Reply</a>
+        </div>
+        <div class="small-5 columns">
+        <input type="text" placeholder="Your message here...">
+        </div>
+        </div>
+        </div>
+        </div>
+
+            <div class="button-bar small-7 small-offset-8 large-9 large-offset-3 columns">
+            <ul class="button-group round">
+                  <li><a href="#" class="button small has-tip secondary" title="Quick View Document"><i class="fi-eye"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Mark as read"><i class="fi-check"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Bookmark"><i class="fi-bookmark"></i></a></li>
+                  <li><a href="#" class="button small has-tip secondary" title="Archive"><i class="fi-trash"></i></a></li>
+            </ul>
+            </div>
+
+    </form>
+                    </div> <!-- cd-timeline-content -->
+                </div>
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <i class="fa fa-i-cursor icons"></i>
+
+                    </div> <!-- cd-timeline-img -->
+
+
+            </section> <!-- cd-timeline -->
+
+
+  </li>
 </main>
-			<!-- <li>
-				<ul class="cd-item-wrapper">
-					<li data-type="red" class="is-visible">
-						<img src="../bouncy-content-filter/img/thumb-red.jpg" alt="thumbnail">
-					</li>
 
-					<li data-type="blue" class="is-hidden">
-						<img src="../bouncy-content-filter/img/thumb-blue.jpg" alt="thumbnail">
-					</li>
-
-					<li data-type="green" class="is-hidden">
-						<img src="../bouncy-content-filter/img/thumb-green.jpg" alt="thumbnail">
-					</li>
-				</ul>
-			</li>
-
-			<li>
-				<ul class="cd-item-wrapper">
-					<li data-type="red" class="is-visible">
-						<img src="../bouncy-content-filter/img/thumb-red.jpg" alt="thumbnail">
-					</li>
-
-					<li data-type="blue" class="is-hidden">
-						<img src="../bouncy-content-filter/img/thumb-blue.jpg" alt="thumbnail">
-					</li>
-
-					<li data-type="green" class="is-hidden">
-						<img src="../bouncy-content-filter/img/thumb-green.jpg" alt="thumbnail">
-					</li>
-				</ul>
-			</li>
-
-			<li>
-				<ul class="cd-item-wrapper">
-					<li data-type="red" class="is-visible">
-						<img src="../bouncy-content-filter/img/thumb-red.jpg" alt="thumbnail">
-					</li>
-
-					<li data-type="blue" class="is-hidden">
-						<img src="../bouncy-content-filter/img/thumb-blue.jpg" alt="thumbnail">
-					</li>
-
-					<li data-type="green" class="is-hidden">
-						<img src="../bouncy-content-filter/img/thumb-green.jpg" alt="thumbnail">
-					</li> -->
 				</ul>
 			</li>
 		</ul> <!-- cd-gallery -->
@@ -562,6 +898,15 @@
 <div class="quickView"></div>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
+
+<div id="eSignModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Send for eSign</h2>
+  <p class="lead"></p>
+<div class="quickView"></div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+
                     <!--- end modals -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->

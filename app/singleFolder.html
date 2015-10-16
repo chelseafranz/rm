@@ -56,31 +56,27 @@
             <a href="#0"><i class="fi-folder-add x-large" data-reveal-id="addModal"><span class="show-for-small-only">Add File</span></i>
 
             </a>
-
-
-          </li>
-  				<li>
-            <a href="#0"><i class="fi-magnifying-glass x-large"><span class="show-for-small-only">Search</span></i>
-
-
-            </a>
-
           </li>
 
   				<li>
-  					<a href="#0" class="cd-subnav-trigger"><i class="fi-folder x-large">
+  					<a href="#0" class="cd-subnav-trigger"><i class="fi-magnifying-glass x-large">
               <span class="show-for-small-only">Folders</span>
             </i>
             </a>
 
   					<ul>
-  						<li class="go-back"><a href="#0">Menu</a></li>
-  						<li><a href="#0">General Documents</a></li>
-  						<li><a href="#0">Payroll</a></li>
-  						<li><a href="#0">Employees</a></li>
-  						<li><a href="#0">Miscelaneous</a></li>
-  						<li><a href="#0">Personal</a></li>
-  						<li><a href="#0" class="placeholder">Placeholder</a></li>
+              <li class="go-back"><a href="#0">Menu</a></li>
+              <li>
+                <div class="mui-textfield">
+                <input id="input" type="text" placeholder="Search for Folder">
+              </div>
+            </li>
+              <li>
+                <button type="submit" class="mui-btn mui-btn-raised">Submit</button>
+              </li>
+
+              <li>
+                <a href="#0" class="placeholder">Placeholder</a></li>
   					</ul>
   				</li>
   			</ul> <!-- .cd-main-nav -->
@@ -98,26 +94,60 @@
         <div class="card" id="fullPageCard">
           <div class="content">
               <div class="box">
-                  <div class="folderButtons">
-                    <button  id="folderBtn" class="mui-btn has-tip" title="Folder Options" data-mui-style="fab" data-mui-color="accent">
-                      <i class="fi-folder x-large"></i>
-                    </button>
-                    <button data-reveal-id="quickAddModal" class="addBtn mui-hide mui-btn addFileBtn" data-mui-style="fab">
-                          <i class="fi-folder-add x-large"></i>
-                    </button>
-                    <button data-reveal-id="quickViewModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
-                          <i class="fi-eye x-large"></i>
-                    </button>
-                </div>
+
         <div class="info">
           <h4 class="text-right">General Documents</h4>
+
             <div class="small-12 columns">
               <div id="fullPageDoc" class="image-wrapper overlay-fade-in">
+                <div class="folderButtons">
+                  <button  id="folderBtn" class="mui-btn has-tip" title="Folder Options" data-mui-style="fab" data-mui-color="accent">
+                    <i class="fi-page x-large"></i>
+                  </button>
+                  <button data-reveal-id="eSignModal" class="addBtn mui-hide mui-btn addFileBtn" data-mui-style="fab">
+                        <i class="fi-pencil x-large"></i>
+                  </button>
+                  <button data-reveal-id="quickViewModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+                        <i class="fi-align-justify x-large"></i>
+                  </button>
+                  <button data-reveal-id="quickViewModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+                        <i class="fi-align-justify x-large"></i>
+                  </button>
+              </div>
                 <div class="thumbnail">
                   <h3 class="docName">Document Name</h3>
                   <h4 class="createdDate">Created 10.23.14</h4>
                 </div>
+                <div id="document">
+                  <p>
+                    Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
 
+                    Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                    <br>
+
+                    Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+                  </p>
+                  <p>
+                    Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
+
+                  </p>
+                  <p>
+                    Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+                <br>
+                    Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources.
+
+                    Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.
+                  </p>
+                <p>
+                  Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets.
+                <br>
+                  Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.
+                </p>
+                <p>
+                X_____________________________________________
+                </p>
+
+                </div>
               </div>
             </div>
             <div class="small-12 columns">
@@ -126,7 +156,34 @@
                   <h3 class="docName">Document Name</h3>
                   <h4 class="createdDate">Created 10.23.14</h4>
                 </div>
+                <div id="document">
+                  <p>
+                    Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
 
+                    Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                    <br>
+
+                    Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+                  </p>
+                  <p>
+                    Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
+
+                  </p>
+                  <p>
+                    Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+                <br>
+                    Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources.
+
+                    Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.
+                  </p>
+                <p>
+                  Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets.
+                <br>
+                  Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.
+                </p>
+
+
+                </div>
               </div>
             </div>
             <div class="small-12 columns">
@@ -135,7 +192,34 @@
                   <h3 class="docName">Document Name</h3>
                   <h4 class="createdDate">Created 10.23.14</h4>
                 </div>
+                <div id="document">
+                  <p>
+                    Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
 
+                    Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                    <br>
+
+                    Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+                  </p>
+                  <p>
+                    Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
+
+                  </p>
+                  <p>
+                    Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+                <br>
+                    Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources.
+
+                    Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.
+                  </p>
+                <p>
+                  Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets.
+                <br>
+                  Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.
+                </p>
+
+
+                </div>
               </div>
             </div>
 
@@ -177,6 +261,15 @@
 <div class="quickView"></div>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
+
+<div id="eSignModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Send for eSign</h2>
+  <p class="lead"></p>
+<div class="quickView"></div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+
 
 <!-- end modals -->
 </main>

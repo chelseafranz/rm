@@ -59,28 +59,26 @@
 
 
           </li>
-  				<li>
-            <a href="#0"><i class="fi-magnifying-glass x-large"><span class="show-for-small-only">Search</span></i>
-
-
-            </a>
-
-          </li>
 
   				<li>
-  					<a href="#0" class="cd-subnav-trigger"><i class="fi-folder x-large">
-              <span class="show-for-small-only">Folders</span>
+  					<a href="#0" class="cd-subnav-trigger"><i class="fi-magnifying-glass x-large">
+
             </i>
             </a>
 
   					<ul>
-  						<li class="go-back"><a href="#0">Menu</a></li>
-  						<li><a href="#0">General Documents</a></li>
-  						<li><a href="#0">Payroll</a></li>
-  						<li><a href="#0">Employees</a></li>
-  						<li><a href="#0">Miscelaneous</a></li>
-  						<li><a href="#0">Personal</a></li>
-  						<li><a href="#0" class="placeholder">Placeholder</a></li>
+              <li class="go-back"><a href="#0">Menu</a></li>
+              <li>
+                <div class="mui-textfield">
+                <input id="input" type="text" placeholder="Search for Folder">
+              </div>
+            </li>
+              <li>
+                <button type="submit" class="mui-btn mui-btn-raised">Submit</button>
+              </li>
+
+              <li>
+                <a href="#0" class="placeholder">Placeholder</a></li>
   					</ul>
   				</li>
   			</ul> <!-- .cd-main-nav -->
@@ -165,15 +163,19 @@
         <div class="card " id="singlePageCard">
           <div class="content">
               <div class="box">
-                  <div class="folderButtons">
-                    <button  id="folderBtn" class="mui-btn has-tip" title="Folder Options" data-mui-style="fab" data-mui-color="secondary">
-                      <i class="fi-folder x-large"></i>
+                  <div class="folderButtons columns small-11 small-offset-1">
+                    <button  id="folderBtn" class="mui-btn mui-btn-accent has-tip" title="Folder Options" data-mui-style="fab" data-mui-color="secondary">
+                      <i class="fi-align-justify large"></i>
+                      <br>
                     </button>
-                    <button data-reveal-id="quickAddModal" class="addBtn mui-btn addFileBtn" data-mui-style="fab">
-                          <i class="fi-folder-add x-large"></i>
+                    <button data-reveal-id="quickAddModal" class="addBtn mui-btn mui-btn-accent addFileBtn" data-mui-style="fab">
+                          <i class="fi-pencil large"></i>
                     </button>
-                    <button data-reveal-id="" class="addBtn mui-btn folderHistoryBtn" data-mui-style="fab">
-                          <i class="fi-eye x-large"></i>
+                    <button data-reveal-id="" class="addBtn mui-btn mui-btn-accent folderHistoryBtn" data-mui-style="fab">
+                          <i class="fi-bookmark large"></i>
+                    </button>
+                    <button data-reveal-id="" class="addBtn mui-btn mui-btn-accent folderHistoryBtn" data-mui-style="fab">
+                          <i class="fi-trash large"></i>
                     </button>
                 </div>
         <div class="info">
@@ -247,6 +249,15 @@
 <div class="quickView"></div>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
+
+<div id="eSignModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Send for eSign</h2>
+  <p class="lead"></p>
+<div class="quickView"></div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+
 
 <!-- end modals -->
 </main>

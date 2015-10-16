@@ -59,28 +59,21 @@
 
 
           </li>
-  				<li>
-            <a href="#0"><i class="fi-magnifying-glass x-large"><span class="show-for-small-only">Search</span></i>
-
-
-            </a>
-
-          </li>
 
   				<li>
-  					<a href="#0" class="cd-subnav-trigger"><i class="fi-folder x-large">
+  					<a href="#0" class="cd-subnav-trigger"><i class="fi-magnifying-glass x-large">
               <span class="show-for-small-only">Folders</span>
             </i>
             </a>
 
   					<ul>
-  						<li class="go-back"><a href="#0">Menu</a></li>
-  						<li><a href="#0">General Documents</a></li>
-  						<li><a href="#0">Payroll</a></li>
-  						<li><a href="#0">Employees</a></li>
-  						<li><a href="#0">Miscelaneous</a></li>
-  						<li><a href="#0">Personal</a></li>
-  						<li><a href="#0" class="placeholder">Placeholder</a></li>
+              <li class="go-back"><a href="#0">Menu</a></li>
+              <li><div class="mui-textfield">
+                <input id="input" type="text" placeholder="Search for Folder">
+              </div></li>
+              <li><button type="submit" class="mui-btn mui-btn-raised">Submit</button></li>
+
+              <li><a href="#0" class="placeholder">Placeholder</a></li>
   					</ul>
   				</li>
   			</ul> <!-- .cd-main-nav -->
@@ -94,7 +87,7 @@
 
 
       <div class="row">
-        
+
         <div class="small-6 columns">
 
           <div class="header panel">
@@ -165,13 +158,13 @@
                       <li class="has-tip" title="view document page">
                           <a href="docPage.html" class="button secondary"><i class="fi-page medium"></i></a>
                       </li>
-                      <li class="has-tip" title="quick view document">
+                      <li class="has-tip" title="quick view document" data-reveal-id="quickViewModal">
                           <a href="#" class="button secondary"><i class="fi-eye medium"></i></a>
                       </li>
                       <li class="has-tip" title="view document timeline">
-                          <a href="#" data-reveal-id="historyModal" class="button secondary"><i class="fi-comments medium"></i></a>
+                          <a href="#" data-reveal-id="historyModal" class="button secondary"><i class="fi-align-justify medium"></i></a>
                       </li>
-                      <li class="has-tip" title="send document for eSign">
+                      <li class="has-tip" title="send document for eSign" data-reveal-id="eSignModal">
                           <a href="#" class="button secondary"><i class="fi-pencil medium"></i></a>
                       </li>
 
@@ -197,9 +190,9 @@
                            <i class="fi-eye"></i>
                            </a>
                        </li>
-                       <li>
+                       <li class="has-tip" title="view document timeline">
                            <a href="#" class="button secondary">
-                           <i class="fi-comments"></i>
+                           <i class="fi-align-justify"></i>
                            </a>
                        </li>
                        <li>
@@ -229,9 +222,9 @@
                            <i class="fi-eye"></i>
                            </a>
                        </li>
-                       <li>
+                       <li class="has-tip" title="view document timeline">
                            <a href="#" class="button secondary">
-                           <i class="fi-comments"></i>
+                           <i class="fi-align-justify"></i>
                            </a>
                        </li>
                        <li>
@@ -278,11 +271,21 @@
 </div>
 
 <div id="quickViewModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-  <h2 id="modalTitle">Quick View Folder</h2>
-  <p class="lead">General Documents</p>
+  <h2 id="modalTitle">Quick View</h2>
+  <p class="lead">This is a quick view of the document that pops up as a modal without leaving the main dashboard page.</p>
 <div class="quickView"></div>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
+
+<div id="eSignModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Send for eSign</h2>
+  <p class="lead"></p>
+<div class="quickView"></div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+
+
 </main>
 
 
