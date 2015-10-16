@@ -39,47 +39,50 @@
 
 
   		<nav class="cd-main-nav-wrapper">
-  			<ul class="cd-main-nav">
-  				<li>
+        <ul class="cd-main-nav">
+          <li>
             <a href="index.html">
-              <i class="fi-home x-large">
-                <span class="show-for-small-only">Home</span>
+              <i class="fi-home x-large navIcons">
+                <span class="" id="home">Home</span>
               </i>
             </a>
           </li>
-  				<li>
+
+          <li>
             <a href="timeline.html">
-              <i class="fi-align-justify x-large"><span class="show-for-small-only">Timeline</span></i>
-            </a>
-          </li>
-  				<li>
-            <a href="#0"><i class="fi-folder-add x-large" data-reveal-id="addModal"><span class="show-for-small-only">Add File</span></i>
-
+              <i class="fi-align-justify x-large navIcons">
+                <span class="" id="timeline">Timeline</span></i>
+              </i>
             </a>
           </li>
 
-  				<li>
-  					<a href="#0" class="cd-subnav-trigger"><i class="fi-magnifying-glass x-large">
-              <span class="show-for-small-only">Folders</span>
+          <li>
+            <a href="">
+              <i class="fi-folder-add x-large navIcons" data-reveal-id="addModal">
+                <span class="" id="addFile">Upload</span>
             </i>
+          </a>
+          </li>
+
+          <li>
+            <a href="#0"><i class="fi-wrench x-large navIcons" data-reveal-id="settingsModal">
+              <span class="" id="settings">Settings</span></i>
             </a>
+          </li>
+          <li>
+            <a href="#0" class="cd-subnav-trigger"><i class="fi-magnifying-glass x-large"></i></a>
 
-  					<ul>
+            <ul>
               <li class="go-back"><a href="#0">Menu</a></li>
-              <li>
-                <div class="mui-textfield">
+              <li><div class="mui-textfield">
                 <input id="input" type="text" placeholder="Search for Folder">
-              </div>
-            </li>
-              <li>
-                <button type="submit" class="mui-btn mui-btn-raised">Submit</button>
-              </li>
+              </div></li>
+              <li><button type="submit" class="mui-btn mui-btn-raised">Submit</button></li>
 
-              <li>
-                <a href="#0" class="placeholder">Placeholder</a></li>
-  					</ul>
-  				</li>
-  			</ul> <!-- .cd-main-nav -->
+              <li><a href="#0" class="placeholder">Placeholder</a></li>
+            </ul>
+          </li>
+        </ul> <!-- .cd-main-nav -->
   		</nav> <!-- .cd-main-nav-wrapper -->
 
   		<a href="#0" class="cd-nav-trigger"><span></span></a>
@@ -104,14 +107,25 @@
                   <button  id="folderBtn" class="mui-btn has-tip" title="Folder Options" data-mui-style="fab" data-mui-color="accent">
                     <i class="fi-page x-large"></i>
                   </button>
+
                   <button data-reveal-id="eSignModal" class="addBtn mui-hide mui-btn addFileBtn" data-mui-style="fab">
                         <i class="fi-pencil x-large"></i>
                   </button>
-                  <button data-reveal-id="quickViewModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+
+                  <button data-reveal-id="historyModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
                         <i class="fi-align-justify x-large"></i>
                   </button>
+
+                  <button data-reveal-id="historyModal" class="addBtn mui-hide mui-btn folderHistoryBtn has-tip" title="Bookmark this document" data-mui-style="fab">
+                        <i class="fi-bookmark x-large"></i>
+                  </button>
+
+                  <button data-reveal-id="historyModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+                        <i class="fi-comments x-large"></i>
+                  </button>
+
                   <button data-reveal-id="quickViewModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
-                        <i class="fi-align-justify x-large"></i>
+                        <i class="fi-trash x-large"></i>
                   </button>
               </div>
                 <div class="thumbnail">
@@ -153,6 +167,27 @@
             <div class="small-12 columns">
               <div id="fullPageDoc" class="image-wrapper overlay-fade-in">
                 <div class="thumbnail">
+                  <div class="folderButtons">
+                    <button  id="folderBtn" class="mui-btn has-tip" title="Folder Options" data-mui-style="fab" data-mui-color="accent">
+                      <i class="fi-page x-large"></i>
+                    </button>
+
+                    <button data-reveal-id="eSignModal" class="addBtn mui-hide mui-btn addFileBtn" data-mui-style="fab">
+                          <i class="fi-pencil x-large"></i>
+                    </button>
+
+                    <button data-reveal-id="historyModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+                          <i class="fi-align-justify x-large"></i>
+                    </button>
+
+                    <button data-reveal-id="historyModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+                          <i class="fi-comments x-large"></i>
+                    </button>
+
+                    <button data-reveal-id="quickViewModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+                          <i class="fi-trash x-large"></i>
+                    </button>
+                </div>
                   <h3 class="docName">Document Name</h3>
                   <h4 class="createdDate">Created 10.23.14</h4>
                 </div>
@@ -189,6 +224,27 @@
             <div class="small-12 columns">
               <div id="fullPageDoc" class="image-wrapper overlay-fade-in">
                 <div class="thumbnail">
+                  <div class="folderButtons">
+                    <button  id="folderBtn" class="mui-btn has-tip" title="Folder Options" data-mui-style="fab" data-mui-color="accent">
+                      <i class="fi-page x-large"></i>
+                    </button>
+
+                    <button data-reveal-id="eSignModal" class="addBtn mui-hide mui-btn addFileBtn" data-mui-style="fab">
+                          <i class="fi-pencil x-large"></i>
+                    </button>
+
+                    <button data-reveal-id="historyModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+                          <i class="fi-align-justify x-large"></i>
+                    </button>
+
+                    <button data-reveal-id="historyModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+                          <i class="fi-comments x-large"></i>
+                    </button>
+
+                    <button data-reveal-id="quickViewModal" class="addBtn mui-hide mui-btn folderHistoryBtn" data-mui-style="fab">
+                          <i class="fi-trash x-large"></i>
+                    </button>
+                </div>
                   <h3 class="docName">Document Name</h3>
                   <h4 class="createdDate">Created 10.23.14</h4>
                 </div>
@@ -234,10 +290,31 @@
 <div id="addModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
   <h2 id="modalTitle">Upload a File or Folder</h2>
   <p class="lead">Upload a file or folder</p>
+  <div class="columns small-2">
+    <button class="mui-btn mui-btn-accent" data-mui-style="fab"><i class="fi-page-add"></i></button>
+    <button class="mui-btn mui-btn-accent" data-mui-style="fab"><i class="fi-folder-add"></i></button>
+  </div>
 
-  <button class="mui-btn" data-mui-style="fab"><i class="fi-page-add"></i></button>
-  <button class="mui-btn" data-mui-style="fab"><i class="fi-folder-add"></i></button>
-
+  <div class="columns small-5">
+    <form>
+      <div class="mui-select">
+        <select>
+          <option>Select Folder</option>
+          <option>Employees</option>
+          <option>General Documents</option>
+          <option>Payroll</option>
+          <option>Onboarding</option>
+          <option>Time Off-Requests</option>
+          <option>Personal</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  <div class="columns small-5">
+    <div class="mui-textfield">
+      <input id="input" type="text" placeholder="Create New Folder">
+    </div>
+  </div>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 
@@ -269,6 +346,26 @@
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 
+<div id="settingsModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Account Settings</h2>
+  <p class="lead"></p>
+<div class="quickView"></div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div id="historyModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Document History</h2>
+  <p class="lead"></p>
+<div class="quickView"></div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div id="archiveModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Archive Document<h2>
+  <p class="lead"></p>
+<div class="quickView"></div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
 
 
 <!-- end modals -->

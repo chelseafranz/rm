@@ -2,11 +2,10 @@
 @import "bower_components/foundation/scss/foundation.scss";
 // endbower
 //////////////////////////////////// universal styling
-@mixin headerFont($fontSize, $fontWeight){
+@mixin headerFont( $fontWeight){
   text-transform: uppercase;
   font: bolder 0.875rem "Avenir Next";
   letter-spacing: 3px;
-  font-size: $fontSize;
   font-weight: $fontWeight;
 }
 
@@ -40,19 +39,21 @@ body {
   color: $darkGray;
 }
 h1{
-  @include headerFont(3em, lighter);
+  @include headerFont(lighter);
+  font-size: 3em;
 }
 .contain-to-grid{
   height: 100px;
 }
 a{
-  @include headerFont(.2rem, lighter);
+  @include headerFont(lighter);
 }
 .button-group>li>a{
 letter-spacing: 0px;
 }
 #docPageLink{
-  @include headerFont(1.4rem, bolder);
+  @include headerFont(bolder);
+  font-size: 1.4rem;
   color: $darkGray;
 
   &:hover{
@@ -160,8 +161,34 @@ button.addBtn{
   font-family: "Avenir Next";
   text-transform: uppercase;
   padding-top: 20px;
-  font-style: normal;
+  font-style:normal;
 }
+
+.cd-main-nav li a{
+
+  font-style:normal;
+}
+
+#home, #timeline, #addFile, #settings{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  font-size: .5em;
+}
+#timeline{
+  left: -12px;
+}
+#addFile{
+  left: -10px;
+}
+#settings{
+  left: -15px;
+}
+.navIcons{
+  padding: 0px 20px;
+  position: relative;
+}
+
 .sign{
   width: 100px;
   button{
@@ -268,7 +295,8 @@ button.addBtn{
 
 $global-radius: 4px;
 .image-wrapper {
-  @include headerFont(.1rem, lighter);
+  @include headerFont(lighter);
+  font-size: .1rem;
   width: 100%;
   height: 140px;
   border: 1px solid rgba(0,0,0,0.04);
@@ -294,7 +322,8 @@ $global-radius: 4px;
 // modifier classes
 
   .text-right{
-    @include headerFont(1.4em, lighter);
+    @include headerFont(lighter);
+    font-size: 1.4em;
   }
 
 
@@ -312,10 +341,12 @@ $global-radius: 4px;
     transition: all 0.2s linear;
   }
   .docName{
-    @include headerFont(1rem, lighter);
+    @include headerFont(lighter);
+    font-size: 1rem;
   }
   .createdDate{
-    @include headerFont(.8rem, bolder);
+    @include headerFont(bolder);
+    font-size: .8rem;
     letter-spacing: normal;
 
   }

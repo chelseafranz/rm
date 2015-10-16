@@ -370,7 +370,7 @@ header::before {
     border-color: rgba(255, 255, 255, 0.4);
   }
   .cd-main-nav .cd-subnav-trigger::before, .cd-main-nav .cd-subnav-trigger::after {
-    top: 22px;
+    top: 30px;
     right: 17px;
     background-color: #ffffff;
     /* change transform-origin to rotate the arrow */
