@@ -10,7 +10,6 @@ $('.sign').on('click', function(){
 })
 
 $('a').on('click', function () {
-
     $(this).siblings('.addBtn').toggleClass('mui-hide');
 });
 
