@@ -45,15 +45,28 @@ h1{
 .contain-to-grid{
   height: 100px;
 }
+a{
+  @include headerFont(.2rem, lighter);
+}
+.button-group>li>a{
+letter-spacing: 0px;
+}
+#docPageLink{
+  @include headerFont(1.4rem, bolder);
+  color: $darkGray;
 
+  &:hover{
+    font-weight: lighter;
+    transition: all .5s ease;
+  }
+}
 ////////////////////////////////////end universal styling
+button.addBtn{
+  color: $darkGray;
+}
 .top-bar-section ul li>a{
   font-size: 2em;
 }
-.cd-timeline-img{
-    box-shadow: none;
-}
-
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -80,6 +93,45 @@ h1{
   display: none;
 }
 
+#fullPageCard{
+  max-height: 100vh;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#fullPageDoc{
+  height: 900px;
+  padding-top: 20px;
+  margin-top: 25px;
+}
+#singlePageCard{
+  max-height: 100vh;
+  height: 100%;
+  margin-top: 20px;
+}
+#singlePageDoc{
+  height: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid $ltGray;
+
+}
+#document{
+  p{
+    font-size: 1rem;
+    color: $darkGray;
+    text-align: left;
+    padding-top: 15px;
+    text-transform: none;
+    font-weight: lighter;
+  }
+}
+#doc{
+  margin-left: .5em;
+}
+.docEdit{
+  margin-right: -20rem;
+}
 /////////// nav styling
 .cd-main-nav a{
   color: white;
@@ -120,6 +172,18 @@ h1{
     }
   }
 }
+
+#input{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.mui-select{
+  z-index: 100000;
+}
+
 ///////////////////// callout card header
 .header.panel {
   margin: 3rem auto;
@@ -274,18 +338,16 @@ $global-radius: 4px;
   .button {
     display: inline-block;
     text-decoration: none;
-    padding: 7px 14px;
+    padding: 9px 14px;
     background: #FFF;
     color: #222;
     text-transform: uppercase;
-    box-shadow: 0 0 1px #000;
     position: relative;
-    border: 1px solid #999;
+
     opacity: 0;
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      box-shadow: 0 0 5px #000;
     }
   }
 
@@ -309,9 +371,20 @@ $global-radius: 4px;
     transition-delay: 0.2s;
   }
 }
-/*------------------------------------
- timeline styles
-------------------------------------*/
+
+.docThumbnail{
+  padding-top: 0px;
+
+  li{
+    padding: 0px;
+    border: none;
+  }
+
+}
+
+
+ ///////////////////////////////////timeline styles
+
 .path-container{
   margin-top: 50px;
   margin-bottom: 70px;
@@ -362,11 +435,24 @@ $global-radius: 4px;
     height: 1164px;
   }
 }
+#cd-timeline::before{
+  background: $darkGray;
+}
+.cd-timeline-img{
+    box-shadow: none;
+}
+.cd-timeline-content.unread{
+  box-shadow: 4px 4px 4px 0px $alertColor;
+}
+.cd-timeline-content{
+  box-shadow: 4px 4px 4px 0px $ltGray;
+}
+i.unread{
+  color: $alertColor;
+}
 
+ /////////////////////////////medium timeline styles
 
-/*------------------------------------
- medium timeline styles
-------------------------------------*/
 
 @media only screen and (max-width: 800px) and (min-width: 768px) {
 	.line {

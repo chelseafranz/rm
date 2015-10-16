@@ -36,30 +36,28 @@
         <ul class="cd-main-nav">
           <li>
             <a href="index.html">
-              <i class="fi-home"></i>
+              <i class="fi-home x-large"></i>
             </a>
           </li>
           <li>
             <a href="timeline.html">
-              <i class="fi-align-justify"></i>
+              <i class="fi-align-justify x-large"></i>
             </a>
           </li>
           <li>
-            <a href="#0"><i class="fi-folder-add"></i></a>
+            <a href=""><i class="fi-folder-add x-large" data-reveal-id="addModal"></i></a>
           </li>
+          
           <li>
-            <a href="#0"><i class="fi-magnifying-glass"></i></a>
-          </li>
-          <li>
-            <a href="#0" class="cd-subnav-trigger"><i class="fi-folder"></i></a>
+            <a href="#0" class="cd-subnav-trigger"><i class="fi-magnifying-glass x-large"></i></a>
 
             <ul>
               <li class="go-back"><a href="#0">Menu</a></li>
-              <li><a href="#0">General Documents</a></li>
-              <li><a href="#0">Payroll</a></li>
-              <li><a href="#0">Employees</a></li>
-              <li><a href="#0">Miscelaneous</a></li>
-              <li><a href="#0">Personal</a></li>
+              <li><div class="mui-textfield">
+                <input id="input" type="text" placeholder="Search for Folder">
+              </div></li>
+              <li><button type="submit" class="mui-btn mui-btn-raised">Submit</button></li>
+
               <li><a href="#0" class="placeholder">Placeholder</a></li>
             </ul>
           </li>
@@ -68,8 +66,28 @@
       <a href="#0" class="cd-nav-trigger"><span></span></a>
 
     </header>
-    <main class="cd-main-content">
 
+    <main class="cd-main-content">
+      <br>
+      <br>
+      <div class="folderSelect columns small-offset-4 small-4">
+        <form>
+          <div class="mui-select">
+            <select>
+              <option>Select Folder</option>
+              <option>Employees</option>
+              <option>General Documents</option>
+              <option>Payroll</option>
+              <option>Onboarding</option>
+              <option>Time Off-Requests</option>
+              <option>Personal</option>
+
+            </select>
+          </div>
+        </form>
+      </div>
+<br>
+<br>
   <div class="cd-gallery-container">
 		<nav class="cd-filter">
 			<ul>
@@ -97,15 +115,17 @@
 
           		<h1 class="text-center">Document History</h1>
 
-                <section class="timelinePage">
-                <section id="cd-timeline" class="cd-container">
-    <div class="cd-timeline-block">
-    <div class="cd-timeline-img">
-          <button data-reveal-id="" class="mui-btn" data-mui-style="fab"><i class="fi-comment-quotes icons"></i></button>
+      <section class="timelinePage">
+      <section id="cd-timeline" class="cd-container">
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img">
+          <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
+            <i class="fi-comment-quotes icons unread x-large"></i>
+          </button>
 
-    </div> <!-- cd-timeline-img -->
+          </div> <!-- cd-timeline-img -->
 
-    <div class="cd-timeline-content">
+    <div class="cd-timeline-content unread">
         <h2><span class="commenterName">Angela</span> left a comment</h2>
         <span  style="float: inherit;" class="cd-date min">Jan 14</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
@@ -139,7 +159,7 @@
 
     <div class="cd-timeline-block">
         <div class="cd-timeline-img">
-            <button data-reveal-id="" class="mui-btn" data-mui-style="fab"><i class="fi-comment-quotes icons"></i></button>
+            <button data-reveal-id="" class="mui-btn" data-mui-style="fab"><i class="fi-comment-quotes icons x-large"></i></button>
         </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
@@ -178,9 +198,9 @@
 
 
     <div class="cd-timeline-block">
-        <div class="cd-timeline-img unread">
+        <div class="cd-timeline-img">
             <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
-                <i class="fi-alert icons unread"></i>
+                <i class="fi-alert icons x-large"></i>
             </button>
         </div> <!-- cd-timeline-img -->
 
@@ -217,10 +237,12 @@
 
     <div class="cd-timeline-block">
         <div class="cd-timeline-img">
-            <button data-reveal-id="" class="mui-btn" data-mui-style="fab"><i class="fi-unlock"></i></button>
+            <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
+              <i class="fi-unlock x-large unread"></i>
+            </button>
         </div> <!-- cd-timeline-img -->
 
-        <div class="cd-timeline-content">
+        <div class="cd-timeline-content unread">
             <h2>Request to View</h2>
             <span class="cd-date">Jan 14</span>
 
@@ -253,7 +275,7 @@
     <div class="cd-timeline-block">
         <div class="cd-timeline-img">
             <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
-                <i class="fi-key"></i>
+                <i class="fi-key x-large"></i>
             </button>
         </div> <!-- cd-timeline-img -->
 
@@ -275,7 +297,7 @@
             </div>
             </div>
 
-                <div class="button-bar small-7 small-offset-8 large-9 large-offset-3 columns">
+                <div class="button-bar small-12 large-9  columns">
                 <ul class="button-group round">
                       <li><a href="#" class="button small has-tip secondary" title="Quick View Document"><i class="fi-eye"></i></a></li>
                       <li><a href="#" class="button small has-tip secondary" title="Mark as read"><i class="fi-check"></i></a></li>
@@ -294,7 +316,7 @@
     <div class="cd-timeline-block">
         <div class="cd-timeline-img">
             <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
-                <i class="fi-alert icons"></i>
+                <i class="fi-alert x-large"></i>
             </button>
         </div> <!-- cd-timeline-img -->
 
@@ -330,9 +352,9 @@
     </div> <!-- cd-timeline-block -->
 
         <div class="cd-timeline-block">
-            <div class="cd-timeline-img unread">
+            <div class="cd-timeline-img">
                 <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
-                <i class="fi-alert icons unread"></i>
+                <i class="fi-alert x-large"></i>
                 </button>
             </div> <!-- cd-timeline-img -->
 
@@ -370,11 +392,11 @@
     <div class="cd-timeline-block">
         <div class="cd-timeline-img">
             <button data-reveal-id="" class="mui-btn" data-mui-style="fab">
-                <i class="fi-page-edit icons"></i>
+                <i class="fi-page-edit x-large unread"></i>
             </button>
         </div> <!-- cd-timeline-img -->
 
-                        <div class="cd-timeline-content">
+                        <div class="cd-timeline-content unread">
                             <h2>Request to eSign</h2>
                             <p><strong>Angela</strong> has requested an eSignature for this document</p>
                             <span class="cd-date">Feb 18</span>
@@ -509,7 +531,38 @@
 			</li>
 		</ul> <!-- cd-gallery -->
 	</div> <!-- cd-gallery-container -->
+                    <!--- modals -->
+<div id="addModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Upload a File or Folder</h2>
+  <p class="lead">Upload a file or folder</p>
 
+  <button class="mui-btn" data-mui-style="fab"><i class="fi-page-add"></i></button>
+  <button class="mui-btn" data-mui-style="fab"><i class="fi-folder-add"></i></button>
+
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div id="quickAddModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Quck Add</h2>
+  <p class="lead">Upload a file or folder directly to this folder.</p>
+
+  <button class="mui-btn has-tip" title="Upload a File" data-mui-style="fab">
+      <i class="fi-page-add"></i>
+  </button>
+  <button class="mui-btn has-tip" title="Upload a Folder" data-mui-style="fab">
+      <i class="fi-folder-add"></i>
+  </button>
+
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div id="quickViewModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Quick View Folder</h2>
+  <p class="lead">General Documents</p>
+<div class="quickView"></div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+                    <!--- end modals -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
